@@ -13,7 +13,10 @@ const upload = require('../multerConfig'); // Importamos la configuración de Mu
 // POST /api/usuarios/create
 // Esta ruta permite crear un usuario y subir un archivo (como PDF, imagen, etc.)
 // Multer se encarga de procesar el archivo que se sube desde el formulario HTML o Angular
+// ACEPTAR TAMBIÉN /api/usuarios
 router.post('/create', upload.single('file'), usuarioController.createUsuario);
+router.post('/', upload.single('file'), usuarioController.createUsuario);
+
 
 
 // ================================================

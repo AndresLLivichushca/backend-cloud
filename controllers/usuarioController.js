@@ -13,7 +13,8 @@ const pool = new Pool({
 });
 
 // Ruta base donde se guardarán los archivos en el sistema (montaje del Filestore)
-const FILESTORE_BASE_PATH = '/mnt/filestore';
+const FILESTORE_BASE_PATH = '/home/xavi2000pi/uploads';
+
 
 
 // ==========================

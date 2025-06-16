@@ -19,11 +19,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // Configura CORS para permitir peticiones desde otras IPs (como tu frontend en GCP)
 app.use(cors({
-  origin: [ // IPs permitidas para hacer solicitudes al backend
-    'http://34.133.168.252',   // IP pública del frontend
-    'http://34.58.59.214',     // IP alternativa (estática)
-    'http://34.111.209.41'     // Otra IP del entorno frontend
-  ],
+  origin: ['http://34.71.197.78'],   // IP pública del frontend
   methods: ['GET', 'POST'], // Métodos HTTP permitidos
   allowedHeaders: ['Content-Type', 'Authorization'], // Cabeceras permitidas
 }));
